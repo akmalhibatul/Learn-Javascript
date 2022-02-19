@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    console.info("Hello"|| "")
+    console.info("" || [])
+    console.info("0" || "Nol")
+    console.info(0 || "Nol")
+    console.info(null|| "Null")
+    console.info(undefined || "undefined")
+    console.info(undefined || null)
+
+    const person = {
+        firstName: "Hibatul",
+        lastName: "Akmal"
+    }
+
+    const name = person.firstName || person.lastName
+    console.info(name)
+
+    console.info("Hello" && "")
+    console.info("" && [])
+    console.info("0" && "Nol")
+    console.info(0 && "Nol")
+    console.info(null && "Null")
+    console.info(undefined && "undefined")
+    console.info(undefined && null)
+
+
+
+
+</script>
+</body>
+</html>

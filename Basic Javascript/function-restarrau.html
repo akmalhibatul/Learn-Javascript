@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fuction restarry</title>
+</head>
+<body>
+    <script>
+        function sum(name, ...data) {
+            let total = 0
+            for (const item of data) {
+                total += item
+            }
+            document.writeln(`<p>Total ${name} Is ${total}</p>`)
+        }
+
+        sum("Banana", 10, 20, 30, 40, 50, 60)
+        sum("Orange", 10, 20, 30, 40, 50, 60)
+        sum("Grape", 10, 20, 30, 40, 50, 60)
+
+        const values = [10,20,30,40]
+        sum("test", ...values)
+
+        function oldSum(){
+            let total = 0
+            for (const argument of arguments) {
+                total += argument
+            }
+            document.writeln(`<p>Total Is ${total}</p>`)
+        }
+        oldSum(1,2,3,4,5)
+    </script>
+</body>
+</html>

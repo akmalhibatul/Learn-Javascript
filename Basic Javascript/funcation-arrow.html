@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>funcation Arrow</title>
+</head>
+<body>
+    <script>
+        // const sayHello = (name) => {
+        //     const say = `Hello ${name}`
+        //     console.info(say)
+        // }
+
+        // const sayHello = (name) => console.info(`Hello ${name}`)
+
+        const sayHello = name => console.info(`Hello ${name}`)
+
+        sayHello("Hibatul Akmal")
+
+        //sum
+        const sum = (pertama, kedua) => pertama + kedua
+
+        console.log(sum(10,10))
+
+        function giveMeName(callback){
+            callback("Akmal")
+        }
+
+        // Anonymouse Function
+        // giveMeName(function (name){
+        //     console.info(`Hello, ${name}`)
+        // })
+
+        // arrow function
+        giveMeName(name => console.info(`Hello, ${name}`))
+    </script>
+</body>
+</html>

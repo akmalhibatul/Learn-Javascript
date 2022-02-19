@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function generator</title>
+</head>
+<body>
+    <script>
+        function* creatName(){
+            yield "Hibatul"
+            yield "Akmal"
+        }
+
+        const names = creatName()
+        for (const name of names) {
+            console.info(name)
+        }
+
+        function* buatGanjil(value){
+            for (let i = 1; i <= value; i++) {
+                if (i % 2 === 1){
+                    yield i
+                }
+            }
+        }
+
+        const numbers = buatGanjil(10)
+        // for (const number of numbers) {
+        //     console.info(number)
+        // }
+        console.info(numbers.next().value)
+        console.info(numbers.next().value)
+        console.info(numbers.next().value)
+    </script>
+</body>
+</html>

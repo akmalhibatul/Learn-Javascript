@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        const nilai = 80
+        let ucapan;
+
+        if (nilai >= 75){
+            ucapan = "Selamat anda lulus"
+        }else{
+            ucapan = "Silakan coba lagi"
+        }
+
+        document.writeln(`<p>${ucapan}</p>`)
+
+        //ternery operator
+        ucapan = nilai >= 75 ? "Selamat anda Lulus" : "Silakan coba lagi"
+        document.writeln(`<p>${ucapan}</p>`)
+
+    </script>
+</body>
+</html>

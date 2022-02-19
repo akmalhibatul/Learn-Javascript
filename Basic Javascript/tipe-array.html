@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+        let arrayKosong = []
+        let arrayNama = ["Akmal", "Ami", "Amanda", "Fira"]
+
+        const names = []
+        names.push("Eko")
+        names.push("Akmal", "Hibatul")
+        names.push("Ami", "Amanda", "Fira")
+
+        console.table(names)
+
+        
+
+        console.info(names[0])
+        console.info(names[1])
+        console.info(names[2])
+
+        names[0] = "Budi"
+        names[1] = "Siti"
+
+        console.table(names)
+
+        delete names[3]
+
+        console.table(names)
+
+        names.push("Ami lagi")
+
+        console.table(names)
+
+
+    </script>
+</body>
+</html>

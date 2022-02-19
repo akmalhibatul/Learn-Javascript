@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {}
+
+        person["nama"] = "Hibatul akmal"
+        person["alamat"] = "Pamulang"
+        person["umur"] = 18
+
+        console.table(person)
+
+        delete person["umur"]
+
+        console.table(person)
+
+        // Simple
+        const orang = {
+            nama: "Hibatul Akmal",
+            alamat: "Pamulang",
+            umur: 30
+        }
+        console.table(orang)
+
+        console.info(`Nama : ${orang.nama}`)
+        console.info(`alamat : ${orang.alamat}`)
+        console.info(`umur : ${orang.umur}`)
+
+    </script>
+</body>
+</html>

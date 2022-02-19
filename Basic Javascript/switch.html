@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    const nilai = "E"
+    switch (nilai){
+        case "A":
+            document.writeln("<p>Anda Lulus Dengan Nilai A</p>")
+            break
+        case "B":
+        case "C":
+            document.writeln("<p>Anda Lulus Dengan Nilai B/C</p>")
+            break
+        case "D":
+            document.writeln("<p>Anda Lulus Dengan Nilai D</p>")
+            break
+        default:
+            document.writeln("<p>Anda Salah Jurusan</p>")
+    }
+
+    if (nilai === "A") {
+        document.writeln("<p>Anda Lulus Dengan Nilai A</p>")
+    } else if (nilai === "B" || nilai === "C") {
+        document.writeln("<p>Anda Lulus Dengan Nilai B/C</p>")
+    } else if (nilai === "D") {
+        document.writeln("<p>Anda Lulus Dengan Nilai D</p>")
+    } else {
+        document.writeln("<p>Anda Salah Jurusan</p>")
+    }
+</script>
+</body>
+</html>

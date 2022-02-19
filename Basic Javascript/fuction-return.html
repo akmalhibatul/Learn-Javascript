@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function sayHello(firstName, lastName){
+        const say = `Hello ${firstName} ${lastName}`
+        return say
+    }
+    const result = sayHello("Hibatul","Akmal")
+    document.writeln(`<p>${result}</p>`)
+
+    function getFinalValue(value){
+        if (value > 90){
+            return "A"
+        }else if(value > 80){
+            return "B"
+        }else if(value > 70){
+            return "C"
+        }else if (value > 60){
+            return "D"
+        }else{
+            return "E"
+        }
+    }
+
+    const finalValue = getFinalValue(6)
+    document.writeln(`${finalValue}`)
+
+
+    function isContent(array, searchValue){
+        for (const element of array) {
+                if(element === searchValue){
+                    return true
+                }
+        }
+        return false
+    }
+    const array = [1,23,234,234,2344,2,3,44,43,23]
+    const search = 10;
+    const found = isContent(array,search)
+
+    document.writeln(`<p>${found}</p>`)
+
+
+
+
+
+</script>
+</body>
+</html>

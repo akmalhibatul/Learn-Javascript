@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const person = {
+        firstName: "Akmal",
+        lastName: "Hibatul"
+    }
+
+    if ("firstName" in person){
+        alert(`Hello ${person.firstName}`)
+    }else{
+        alert("Hello")
+    }
+
+    const student = {
+        firstName: "Akmal",
+        middleName: undefined,
+        lastName: "Hibatul"
+    }
+
+    if ("middleName" in student){
+        alert(`Hello ${student.middleName}`)
+    }else{
+        alert("Hello Student")
+    }
+
+    const names = [null,"Akmal",null]
+    const result = 0 in names
+    document.writeln(`<p>${result}</p>`)
+</script>
+</body>
+
+
+
+</html>
