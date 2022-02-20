@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masalah Variable Va</title>
+</head>
+<body>
+    <script>
+        //Global Scope
+        let i = 20
+
+        for (let i = 0; i < 10; i++) {
+            //local Scope
+            console.info(`Local = ${i}`)
+        }
+
+        console.info(`Global = ${i}`)
+
+        //Tidak direkomendasikan menggunakan var . jika menemukan tutorial menggunakan var berarti tutorial lama , jika baru menggunakan let 
+
+    </script>
+</body>
+</html>
