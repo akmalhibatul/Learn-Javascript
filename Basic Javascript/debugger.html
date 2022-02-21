@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugger</title>
+</head>
+<body>
+    <script>
+        function createFullName(firstName, middleName, lastName) {
+            const fullName = `${firstName} ${middleName} ${lastName}`
+            return fullName
+        }
+
+        const name = createFullName("Akmal", "Hibatul", "Khan")
+        console.info(name)
+
+        function sum(...numbers){
+            debugger
+            let total = 0
+            for(let number of numbers){
+                total += number
+            }
+            return total
+        }
+        console.log(sum(1,2,3,4,5,6,7,8,9,10))
+    </script>
+</body>
+</html>
