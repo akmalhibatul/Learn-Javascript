@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method Class</title>
+</head>
+<body>
+    <script>
+        class Person {
+            constructor(name){
+                this.name = name
+            }
+
+            sayHello(name){
+                console.info(`Hello ${name}, my name is ${this.name}`)
+            }
+        }
+
+        const akmal = new Person("Akmal")
+        console.log(akmal)
+        akmal.sayHello("Aminah")
+
+        const aminah = new Person("Aminah")
+        console.log(aminah)
+        aminah.sayHello("Akmal")
+    </script>
+</body>
+</html>
