@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Class</title>
+</head>
+<body>
+    <script>
+        class validationError extends Error{
+            constructor(message,field){
+                super(message);
+                this.field = field;
+            }
+        }
+
+
+        class MathUtil{
+            static sum(...numbers){
+                if(numbers.length === 0){
+                    throw new validationError('Total Parameter Harus lebih dari 0','numbers');
+                }
+                let total = 0;
+                for(const number of numbers){
+                    total += number;
+                }
+                return total;
+            }
+        }
+        
+        try{
+            console.info(MathUtil.sum(1,1,1));
+            console.info("Akmal");
+            
+        }catch(error){
+            if(error instanceof validationError){
+                console.error(`Terjadi Error Di Field ${error.field} dengan Error ${error.message}`);
+            }else{
+                console.error(`Terjadi Error : ${error.message}`);
+            }
+        }finally{
+            console.info("Selesai");
+        }
+        console.info("Aminah");
+        
+
+        
+    </script>
+</body>
+</html>
