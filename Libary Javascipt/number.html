@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+    <script>
+        const input = "12345";
+        const number = Number(input);
+
+        console.info(number);
+
+        console.info(Number.MIN_SAFE_INTEGER)
+        console.info(Number.MAX_SAFE_INTEGER)
+
+        const data = Number("12345")
+
+        console.info(Number.isInteger);
+        console.info(Number.isSafeInteger);
+        console.info(Number.isNaN);
+        console.info(Number.isFinite);
+        console.info(Number.isInteger);
+        console.info(Number.isSafeInteger);
+        console.info(Number.isInteger(data));
+        console.info(Number.isSafeInteger(data));
+        console.info(Number.isNaN(data));
+        console.info(Number.isFinite(data));
+        
+        const value = Number("12345");
+        console.info(value.toString(2));
+        console.info(value.toLocaleString("id-ID"));
+        
+    </script>
+</body>
+</html>
