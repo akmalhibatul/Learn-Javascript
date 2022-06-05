@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regexp</title>
+</head>
+<body>
+    <script>
+    {
+        //create regexp
+        const regex1 = /akmal/;
+        const regex2 = new RegExp('akmal');
+        const regex3 = new RegExp(/akmal/);
+    }
+
+    {
+        //test regexp
+        const name = "hibatul akmal"
+        const regex = /akmal/
+
+        const result = regex.exec(name)
+        console.info(result)
+        console.info(regex.exec("tidak Ada"))
+
+        const test = regex.test(name)
+        console.info(test)
+        console.info(regex.test("Tidak Ada"))
+    }
+
+    {
+        //regex modifiers
+
+        const name = "hibatul akmal\nHibatul akmal\nAkmal zulfa"
+        const regex1 = /^hibatul/igm
+        const regex2 = /akmal/ig
+
+        let result;
+        while ((result = regex1.exec(name)) !== null) {
+            console.info(result)
+        }
+
+        while ((result = regex2.exec(name)) !== null) {
+            console.info(result)
+        }
+
+    }
+
+    {
+        //regex advanced
+
+    }
+    </script>
+    
+</body>
+</html>
