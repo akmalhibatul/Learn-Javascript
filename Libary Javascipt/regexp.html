@@ -49,7 +49,25 @@
 
     {
         //regex advanced
+        const regex = /ek[ioaeu]/ig
 
+        const name = "eko eki eka eku eka edo eki"
+        let result;
+        while ((result = regex.exec(name)) !== null) {
+            console.info(result)
+        }
+    }
+
+    {
+        const name = "eko eki eka eku eka edo eki"
+
+        console.info(name.match(/ek[ioaeu]/ig))
+        console.info(name.search(/ek[ioaeu]/ig))
+        // di replace semua karena regex
+
+        console.info(name.replace(/ek[ioaeu]/ig, "eko", "keren"))
+        console.info(name.replaceAll(/ek[ioaeu]/ig, "eko", "keren"))
+        console.info(name.split(/e/ig))
     }
     </script>
     
