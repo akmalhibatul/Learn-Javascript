@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refelct</title>
+</head>
+<body>
+    <script>
+        const person = {};
+
+        Reflect.set(person, "firstName", "John");
+        Reflect.set(person, "lastName", "Doe");
+
+        console.info(person);
+
+        console.info(Reflect.get(person, "firstName"));
+        console.info(Reflect.get(person, "lastName"));
+
+        console.info(Reflect.has(person, "firstName"));
+        console.info(Reflect.has(person, "middleName"));
+        console.info(Reflect.has(person, "lastName"));
+    </script>
+</body>
+</html>
