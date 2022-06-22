@@ -1,7 +1,7 @@
-function sayHello(name){
+export function sayHello(name){
     console.info(`Hello ${name}`);
 }
 
-function sayGoodbye(name){
+export function sayGoodbye(name){
     console.info(`Goodbye ${name}`);
 }

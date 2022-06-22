@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="script/say.js"></script>
-    <title>With Module</title>
-    
+    <title>Multiple Module</title>
 </head>
 <body>
     <script type="module">
-        import {sayHello, sayGoodbye} from "./script/say.js"
-        sayHello("Akmal");
-        sayGoodbye("Hibatul");
+        import {company, sum, Company} from "./script/multiple.js"
+
+        console.info(company)
+        console.info(sum(90,10))
+
+        const a = new Company();
     </script>
 </body>
 </html>
