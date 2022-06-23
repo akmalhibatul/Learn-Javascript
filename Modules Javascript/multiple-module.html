@@ -9,10 +9,15 @@
 <body>
     <script type="module">
         import {company, sum, Company} from "./script/multiple.js"
+        import {company as perusahaan, sum as total, Company as Perusahaan} from "./script/multiple2.js"
 
         console.info(company)
+        console.info(perusahaan)
+        
         console.info(sum(90,10))
+        console.info(total(2,3))
 
+        const a = new Perusahaan();
         const a = new Company();
     </script>
 </body>
