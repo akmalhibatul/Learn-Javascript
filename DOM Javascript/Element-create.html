@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Create</title>
+</head>
+<body>
+    <div class="content" id="content">
+        
+    </div>
+
+    <script>
+        const content = document.getElementById("content")
+
+        //create h1
+        const title = document.createElement("h1")
+        title.textContent = "Belajar Javascript DOM"
+        content.appendChild(title)
+
+        //create deskripsi
+        const deskripsi = document.createElement("p")
+        deskripsi.textContent = "Selamat Belajar Javascrip DOM"
+        content.appendChild(deskripsi)
+    </script>
+</body>
+</html>

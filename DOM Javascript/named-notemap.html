@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Named Note map</title>
+</head>
+<body>
+    <img id="logo" src="https://hibatulakmal.xyz/assets/images/lama/a-modified.png" alt="AKmal Pic">
+
+    <script>
+        const logo = document.getElementById("logo")
+        const attributes = logo.attributes
+
+        for(let attribute of attributes){
+            console.info(`${attribute.name} : ${attribute.value}`);
+        }
+    </script>
+</body>
+</html>
