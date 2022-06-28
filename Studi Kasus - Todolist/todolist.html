@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+</head>
+<body>
+    <form name="todoForm">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="Todo">Todo : </label></td>
+                    <td><input type="text" id="todo" name="todo"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Add"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <h1>Todolist</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Filter : </td>
+                <td><input type="text" name="search" id="search"></td>
+            </tr>
+        </thead>
+        <tbody id="todoListBody">
+            <tr>
+                <td><input type="button" value="Done"></td>
+                <td>Todo Description</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
